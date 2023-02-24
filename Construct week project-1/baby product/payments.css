@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -6,7 +6,6 @@
     /* align-items: center; */
     font-family: 'Ubuntu', sans-serif;
   }
-
   #navbar {
     border: 1px solid;
     display: flex;
@@ -66,7 +65,6 @@
   #right > :nth-child(4) > img {
     width: 100%;
   }
-
   #mid > p {
     width: 100%;
     color: rgb(104, 105, 105);
@@ -139,35 +137,4 @@
    text-align: center;
   
   }
-
-  #mid_Section > :nth-child(1) {
-    padding: 10px;
-    border-bottom: 2px solid rgb(1, 129, 248);
-    background-color: rgb(248, 241, 241);
-    text-align: center;
-  }
-  #mid_Section > :nth-child(1) > a {
-    text-decoration: none;
-    color: rgb(2, 151, 249);
-  }
-  #mid_Section > :nth-child(1) > a :hover {
-    text-decoration: underline;
-    color: rgb(2, 151, 249);
-  }
-  .page{
-    display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  align-items: center;
-
-  }
-  .page>a{
-    color: black;
-    margin-left: 12px;
-    font-size: 12px;
-  }
-  .page>p{
-    color: black;
-    margin-left: 12px;
-    font-size: 12px;
-  }
+  

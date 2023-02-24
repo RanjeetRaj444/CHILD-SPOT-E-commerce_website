@@ -354,12 +354,15 @@ let apiData = [
 ];
 
 let data=JSON.parse(localStorage.getItem("detail"))||[];
+let data2=JSON.parse(localStorage.getItem("fav"))||[];
+let buy=JSON.parse(localStorage.getItem("buy"))||[];
 
 let displayData = document.getElementById("displayData");
 let size = document.getElementById("size");
 let brand = document.getElementById("brand");
 let style = document.getElementById("style");
 let length = document.getElementById("length");
+let price = document.getElementById("price");
 
 size.addEventListener("change", () => {
   if (size.value == "") {
@@ -401,6 +404,16 @@ length.addEventListener("change", () => {
     displayDatas(bag);
   }
 });
+price.addEventListener("change", () => {
+  if (price.value == "") {
+    displayDatas(apiData);
+  } else {
+    let bag = apiData.filter((element) => {
+      return element.price == price.value;
+    });
+    displayDatas(bag);
+  }
+});
 
 function displayDatas(apiData) {
   displayData.innerHTML = "";
@@ -411,27 +424,53 @@ function displayDatas(apiData) {
     let name = document.createElement("h4");
     let brand = document.createElement("p");
     let button = document.createElement("button");
-   
+   let cartbutton=document.createElement("button")
+   let fav=document.createElement("button")
+   let img=document.createElement("img");
+   img.src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Heart-SG2001-transparent.png/640px-Heart-SG2001-transparent.png"
     image.src = element.image;
     price.innerText = element.price;
     name.innerText = element.name;
     brand.innerText = "Child Spot | Baby";
-    button.innerText = "Doorbuster";
+    button.innerText = "Buy";
+    cartbutton.innerText="Add To Cart"
    
+fav.append(img)
 
-
-    div.addEventListener("click",()=>{
-        data=[];
+    cartbutton.addEventListener("click",()=>{
+        // data=[];
        let obj={
         name:element.name,
         price:element.price,
         image:element.image,
        }
        data.push(obj);
-       localStorage.setItem("detail",JSON.stringify(data))
-       window.location.href="./baby_main_page.html"
+       localStorage.setItem("detail",JSON.stringify(data));
+     
     })
-    div.append(image, price, name, brand, button);
+    button.addEventListener("click",()=>{
+      buy=[];
+       let obj={
+        name:element.name,
+        price:element.price,
+        image:element.image,
+       }
+       buy.push(obj);
+       localStorage.setItem("buy",JSON.stringify(buy));
+       window.location.href="./purcahsed.html"
+    })
+    fav.addEventListener("click",()=>{
+        // data2=[];
+       let obj={
+        name:element.name,
+        price:element.price,
+        image:element.image,
+       }
+       data2.push(obj);
+       localStorage.setItem("fav",JSON.stringify(data2));
+     
+    })
+    div.append(image, price, name, brand, button,cartbutton,fav);
     
     displayData.append(div);
   });
