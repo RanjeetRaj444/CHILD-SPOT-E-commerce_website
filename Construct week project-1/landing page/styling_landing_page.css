@@ -63,6 +63,9 @@
 #right > :nth-child(4) > img {
   width: 100%;
 }
+#right > :nth-child(3) > img {
+  width: 40%;
+}
 #mid > p {
   width: 100%;
   color: rgb(104, 105, 105);

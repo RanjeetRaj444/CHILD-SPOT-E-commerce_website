@@ -1,4 +1,6 @@
 let buy=JSON.parse(localStorage.getItem("buy"))||[];
+let order=JSON.parse(localStorage.getItem("order"))||[];
+
 
 let imag=document.getElementById("imag")
 let details=document.getElementById("details")
@@ -19,8 +21,19 @@ buy.forEach((element) => {
     let five=document.createElement("p");
     let six=document.createElement("p");
     let seven=document.createElement("p");
-    let buy=document.createElement("button");
-    buy.innerText="Buy"
+    let buys=document.createElement("button");
+    buys.innerText="Buy"
+
+    buys.addEventListener("click",()=>{
+       let obj={
+        name:element.name,
+        image:element.image,
+        price:element.price
+       }
+       order.push(obj)
+        localStorage.setItem("order",JSON.stringify(order));
+        window.location.href="./pyment.html"
+    })
     let cart=document.createElement("button");
     cart.innerText="Add to Cart"
     price.innerText=element.price;
@@ -33,7 +46,7 @@ buy.forEach((element) => {
     six.innerText="18M"
     seven.innerText="24M"
     size.append(one,two,three,four,five,six,seven)
-    details.append(price,name,size,buy,cart)
+    details.append(price,name,size,buys,cart)
 });
 
 

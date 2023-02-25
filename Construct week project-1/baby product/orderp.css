@@ -136,113 +136,135 @@
   text-align: center;
 }
 
-.payment {
-  /* border: 2px solid; */
-  width: 70%;
-  margin: auto;
-  height: 500px;
-  background-color: rgb(162, 132, 92);
-  margin-top: 20px;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: rgb(58, 58, 219) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.711) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.payment > form > input {
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  padding: 12px;
-  background-color: rgb(89, 21, 81);
-  /* color: black; */
-  width: 50%;
-}
-.payment > form > button {
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  padding: 12px;
-  background-color: rgb(198, 85, 85);
-  border: none;
-  border-radius: 12px;
-  width: 123px;
-}
-.payment > form > button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-.payment > form > select {
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  padding: 12px;
-  width: 50%;
-  background-color: rgb(58, 226, 43);
-}
 
-#button {
+#mid_section > div > div {
+  display: flex;
   text-align: center;
-  align-items: center;
-  padding: 20px;
-}
-#button > button {
-  width: 24%;
-  padding: 10px;
-  font-weight: bold;
-  background-color: rgb(0, 162, 255);
-  border-radius: 5px;
-  border: none;
-}
-
-#bottom_section {
-  border-top: 1px solid;
-  margin-top: 40px;
-}
-
-#bottom_section > :nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-#bottom_section > :nth-child(1) > :nth-child(1) {
-  display: flex;
-  align-items: flex-start;
-  width: 40%;
   justify-content: space-around;
-  padding: 12px;
-  color: rgb(45, 44, 44);
+  margin: 60px;
+  margin-bottom: 90px;
+  box-shadow: rgba(43, 43, 229, 0.342) 0px 50px 100px -20px, rgba(5, 5, 5, 0.506) 0px 30px 60px -30px, rgba(5, 126, 247, 0.35) 0px -2px 6px 0px inset;
 }
-#bottom_section > :nth-child(1) > :nth-child(1) > div > a {
-  text-decoration: none;
-  color: rgb(122, 119, 119);
+#mid_section > div > div > div {
+  text-align: center;
 }
-#bottom_section > :nth-child(1) > :nth-child(1) > div > a :hover {
-  text-decoration: underline;
+#mid_section > div > div > div > img {
+  width: 100%;
 }
-.link {
+#mid_section > div > div > div > h1 {
+  margin:22px 2px;
+  color: red;
+}
+#mid_section > div > div > div > h2 {
+  margin:22px 2px;
+}
+#mid_section > div > div > div > h3 {
+  margin:22px 2px;
+  color: green;
+}
+#mid_section > div > div > div > p {
+  margin:22px 2px;
+  color: blue;
+}
+#mid_section > div > div > div > button {
+  margin:22px 2px;
+  color: blue;
+  width: 20%;
+  padding: 4px;
+  background-color: rgb(231, 46, 33);
+  border: none;
+  border-radius: 12px;
+}
+#mid_section > div > div > div > button:hover{
+background-color: black;
+color: white;
+cursor: pointer;
+}
+  .page {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .page > a {
+    color: black;
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  .page > p {
+    color: black;
+    margin-left: 12px;
+    font-size: 12px;
+  }
+
+
+  
+  #button{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #button>button{
+width: 24%;
+padding: 10px;
+font-weight: bold;
+background-color: rgb(0, 162, 255);
+border-radius: 5px;
+border: none;
+  }
+
+  #bottom_section{
+    border-top: 1px solid;
+    margin-top: 40px;
+  }
+
+#bottom_section>:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+#bottom_section>:nth-child(1)>:nth-child(1){
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    justify-content: space-around;
+    padding: 12px;
+    color: rgb(45, 44, 44);
+}
+#bottom_section>:nth-child(1)>:nth-child(1)>div>a{
+    text-decoration: none;
+    color: rgb(122, 119, 119);   
+}
+#bottom_section>:nth-child(1)>:nth-child(1)>div>a :hover{
+    text-decoration: underline;
+}
+.link{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+ align-items: flex-start;
 }
 
-.services > :nth-child(1) {
+.services>:nth-child(1){
   padding: 50px;
+
 }
-.services > :nth-child(1) > div {
+.services>:nth-child(1)>div{
   display: flex;
   margin: 30px;
 }
-.button {
+.button{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: none;
+  
 }
-.button > img {
+.button>img{
   width: 25px;
   height: 37px;
+  
+  
 }
-.searchbar {
+.searchbar{
   width: 352px;
   height: 40px;
   /* margin: 5px; */
@@ -250,42 +272,44 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.logo > a > img {
+.logo>a>img{
   width: 35px;
 }
-.services > :nth-child(2) > :nth-child(1) {
+.services>:nth-child(2)>:nth-child(1){
   display: flex;
-  margin-left: 250px;
+margin-left: 250px;
 }
-.logo {
+.logo{
   padding: 3px;
   margin: 5px;
   border-radius: 30px;
   background-color: rgb(191, 191, 191);
 }
-.logo:hover {
+.logo:hover{
   /* padding: 4px; */
   /* margin: 12px; */
   border-radius: 33px;
   background-color: rgb(0, 178, 248);
+ 
 }
-.services > :nth-child(2) > p {
+.services>:nth-child(2)>p{
   margin-left: 220px;
 }
 
-.links {
+.links{
   display: flex;
-  margin-left: 320px;
+margin-left: 320px;
 }
-.links > a {
+.links>a{
   color: rgb(136, 135, 135);
   font-size: 10.7px;
   margin-left: 2px;
+
 }
-.links > a:hover {
+.links>a:hover{
   color: rgb(56, 56, 56);
 }
-#bottom_section > :nth-child(2) {
+#bottom_section>:nth-child(2){
   font-size: 12px;
   margin-top: 200px;
   border-bottom: 1px solid;
@@ -293,29 +317,15 @@
   border-color: rgb(176, 176, 176);
   background-color: rgb(245, 245, 245);
 }
-#bottom_section > :nth-child(2) > :nth-child(1) {
+#bottom_section>:nth-child(2)>:nth-child(1){
   margin-left: 1070px;
 }
-.about {
+.about{
   margin: 12px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  font-size: 11px;
+ align-items: flex-start;
+ font-size: 11px;
 }
-.page {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  align-items: center;
-}
-.page > a {
-  color: black;
-  margin-left: 12px;
-  font-size: 12px;
-}
-.page > p {
-  color: black;
-  margin-left: 12px;
-  font-size: 12px;
-}
+
+

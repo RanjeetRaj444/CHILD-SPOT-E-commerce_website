@@ -33,9 +33,9 @@
           />
           <p>Hearts</p>
         </a>
-        <a href=""
+        <a href="/baby product/order.html"
           ><img
-            src="https://cutewallpaper.org/cdn-cgi/mirage/2af0adefb1b7ebf6af3b94bf8b86378693ec8b55d34af727ac0cbb58dfd044f5/1280/24/package-png/roduct-crate-package-box-parcel-shipping-bundle-cargo-packaging-icon-png-image-with-transparent-background-toppng.png"
+            src="https://w7.pngwing.com/pngs/366/18/png-transparent-amazon-com-order-fulfillment-sales-service-others-miscellaneous-angle-rectangle.png"
             alt=""
           />
           <p>Orders</p>
@@ -270,47 +270,48 @@
   </body>
   <script>
 
-    let arr=JSON.parse(localStorage.getItem("Login_Container"))||[];
+
+    let arr = JSON.parse(localStorage.getItem("Login_Container")) || [];
 
     let email = document.getElementById("email");
     let pass = document.getElementById("pass");
     let sign_in = document.getElementById("sign_in");
     let creat = document.getElementById("creat");
 
-    sign_in.addEventListener("click",()=>{
-       let data=arr.forEach((element) => {
-        if(email.value===element.email&&pass.value===element.password){
+    sign_in.addEventListener("click", () => {
+      let data = arr.forEach((element) => {
+        if (email.value === element.email && pass.value === element.password) {
           alert("Login Succesfull");
         }
-       }); 
-    })
-    creat.addEventListener("click",()=>{
-        if(arr.length==0){
-            let obj={
-    email:email.value,
-    password:pass.value,
-}
-arr.push(obj);
-localStorage.setItem("Login_Container",JSON.stringify(arr));
-        }
-        else{
-            let bag=arr.forEach((ele)=>{
-            if(email.value===ele.email&&pass.value===ele.password){
-                alert("Account has already created")
-            }
-            else{
-                let obj={
-    email:email.value,
-    password:pass.value,
-}
-arr.push(obj);
-localStorage.setItem("Login_Container",JSON.stringify(arr));  
-            }
-        })
-        }
-    
+      });
+    });
 
 
-    })
+    creat.addEventListener("click", () => {
+      if (arr.length == 0) {
+        let obj = {
+          email: email.value,
+          password: pass.value,
+        };
+        arr.push(obj);
+        localStorage.setItem("Login_Container", JSON.stringify(arr));
+      } 
+      else {
+        let bag = arr.forEach((ele) => {
+          if (email.value === ele.email && pass.value === ele.password) {
+            alert("Account has already created");
+          } else {
+            let obj = {
+              email: email.value,
+              password: pass.value,
+            };
+            arr.push(obj);
+            localStorage.setItem("Login_Container", JSON.stringify(arr));
+          }
+        });
+      }
+    });
+
+
   </script>
 </html>
