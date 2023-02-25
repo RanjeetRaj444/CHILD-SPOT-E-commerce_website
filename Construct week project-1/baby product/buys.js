@@ -21,6 +21,8 @@ buy.forEach((element) => {
     let seven=document.createElement("p");
     let buy=document.createElement("button");
     buy.innerText="Buy"
+    let cart=document.createElement("button");
+    cart.innerText="Add to Cart"
     price.innerText=element.price;
     name.innerText=element.name;
     one.innerText="NB"
@@ -31,7 +33,7 @@ buy.forEach((element) => {
     six.innerText="18M"
     seven.innerText="24M"
     size.append(one,two,three,four,five,six,seven)
-    details.append(price,name,size,buy)
+    details.append(price,name,size,buy,cart)
 });
 
 
