@@ -211,12 +211,13 @@
 }
 #details > button {
   margin-left: 162px;
-  margin-top: 100px;
+  margin-top: 50px;
   border: 2px solid;
-  padding: 7px 92px;
+  padding: 7px;
   border-radius: 5px;
   background-color: rgb(34, 109, 201);
   border: none;
+  width: 20%;
 }
 #details > button:hover {
   background-color: black;

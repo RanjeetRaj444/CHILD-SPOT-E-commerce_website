@@ -138,3 +138,29 @@
   
   }
   
+
+  .payment{
+    border: 2px solid;
+    width: 70%;
+    margin: auto;
+    height: 500px;
+    background-color: antiquewhite;
+  
+  }
+  .payment>form>input{
+   border: 2px solid red;
+   display: block;
+   margin: auto;
+   margin-top: 20px;
+   padding: 12px;
+   background-color:rgb(211, 236, 161) ;
+   /* color: black; */
+   width: 50%;
+  }
+  .payment>form>button{
+   border: 2px solid red;
+   display: block;
+   margin: auto;
+   margin-top: 20px;
+   padding: 12px;
+  }
