@@ -1,5 +1,5 @@
 let data = JSON.parse(localStorage.getItem("fav")) || [];
-
+let order=JSON.parse(localStorage.getItem("order"))||[];
 let displayData = document.getElementById("displayData");
 let size = document.getElementById("size");
 let brand = document.getElementById("brand");
@@ -77,6 +77,18 @@ function displayDatas(data) {
     brand.innerText = "Child Spot | Baby";
     button.innerText = "Buy";
     remove.innerText = "Remove";
+
+
+    button.addEventListener("click",()=>{
+       let obj={
+        name:element.name,
+        image:element.image,
+        price:element.price
+       }
+       order.push(obj)
+        localStorage.setItem("order",JSON.stringify(order));
+        window.location.href="./pyment.html"
+    })
 
 
     remove.addEventListener("click", () => {

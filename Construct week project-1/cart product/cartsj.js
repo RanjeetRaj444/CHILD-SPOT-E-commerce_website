@@ -1,6 +1,6 @@
 let data = JSON.parse(localStorage.getItem("detail")) || [];
 let data2 = JSON.parse(localStorage.getItem("fav")) || [];
-
+let order=JSON.parse(localStorage.getItem("order"))||[];
 let displayData = document.getElementById("displayData");
 let size = document.getElementById("size");
 let brand = document.getElementById("brand");
@@ -80,6 +80,19 @@ function displayDatas(data) {
     button.innerText = "Buy";
     remove.innerText = "Remove";
     fav.append(img);
+
+
+    button.addEventListener("click",()=>{
+      let obj={
+       name:element.name,
+       image:element.image,
+       price:element.price
+      }
+      order.push(obj)
+       localStorage.setItem("order",JSON.stringify(order));
+       window.location.href="./pyment.html"
+   })
+
 
     fav.addEventListener("click", () => {
       //   data2=[];
