@@ -1,0 +1,298 @@
+/* write style here */
+* {
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	text-align: center;
+}
+
+
+#mid_Section {
+	background-color: beige;
+}
+#mid_Section > :nth-child(1) {
+	padding: 10px;
+	border-bottom: 2px solid rgb(1, 129, 248);
+	background-color: rgb(248, 241, 241);
+}
+#mid_Section > :nth-child(1) > a {
+	text-decoration: none;
+	color: rgb(3, 120, 245);
+}
+#mid_Section > :nth-child(1) > a :hover {
+	text-decoration: underline;
+	color: rgb(5, 63, 126);
+}
+
+#mid_Section > :nth-child(2) {
+	padding: 12px;
+	background-color: rgb(242, 165, 178);
+	color: white;
+}
+#mid_Section > :nth-child(3) {
+	margin-top: 12px;
+	border-bottom: 4px solid rgb(146, 143, 143);
+	border-top: 4px solid rgb(146, 143, 143);
+}
+
+#mid_Section > :nth-child(3) > img {
+	width: 100%;
+}
+#mid_Section > :nth-child(4) {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 40px;
+	color: rgb(111, 111, 119);
+}
+#mid_Section > :nth-child(4) > h1 > span {
+	color: rgb(216, 185, 139);
+}
+
+.page {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.page > a {
+	color: black;
+	margin-left: 12px;
+	font-size: 12px;
+}
+.page > p {
+	color: black;
+	margin-left: 12px;
+	font-size: 12px;
+}
+#imag > img {
+	width: 100%;
+}
+
+.plate {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	margin-bottom: 20px;
+}
+.plate > :nth-child(2) {
+	/* margin: 50px; */
+	padding: 2rem;
+}
+.plate_img {
+	width: 50%;
+}
+.plate_img > img {
+	width: 100%;
+}
+.card_container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.card_container > div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	width: 100%;
+}
+.plate > :nth-child(2) > button {
+	padding: 10px;
+	width: 220px;
+}
+.plate > :nth-child(2) > h2 {
+	margin-bottom: 12px;
+	color: rgb(216, 185, 139);
+	font-size: 40px;
+}
+.plate > :nth-child(2) > p {
+	margin-bottom: 12px;
+	font-size: 20px;
+}
+.pro {
+	background-color: white;
+	/* margin: 5px; */
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.pro > img {
+	width: 100%;
+	padding: 12px;
+}
+.pro > button {
+	width: 15%;
+	border: none;
+	background-color: white;
+}
+.pro > button > img {
+	width: 100%;
+}
+
+.swim {
+	background-image: url("/assets/CAR_Q1_HilaryDuff_Launch_PLP_Desktop_Swim_022123.jpg");
+	background-size: 100% 100%;
+	height: 500px;
+	padding: 1rem 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+}
+.swim > div {
+	width: 25%;
+	/* margin: auto; */
+}
+.swim > div > h1 {
+	font-size: 42px;
+	color: rgb(216, 185, 139);
+}
+.swim > div > p {
+	/* margin-bottom: 20px; */
+	font-size: 22px;
+}
+.swim_btn {
+	padding: 1rem 2rem;
+	background-color: white;
+	border-radius: 0.6rem;
+	border: none;
+	color: rgb(216, 185, 139);
+}
+.swim_btn:hover {
+	background-color: rgb(204, 237, 137);
+}
+
+.scean {
+	padding: 2rem;
+}
+.scean_image_container {
+	display: flex;
+	margin-bottom: 40px;
+	padding: 20px;
+}
+.scean_text_container {
+	width: 76%;
+	margin: auto;
+}
+.scean > div > img {
+	width: 25%;
+	margin: auto;
+}
+.scean_text_container h1 {
+	margin: 12px;
+	font-size: 45px;
+	color: rgb(216, 185, 139);
+}
+.scean_text_container p {
+	margin: 12px;
+	font-size: 25px;
+}
+.scean_btn {
+	padding: 1rem 0.6rem;
+	color: rgb(216, 185, 139);
+	border: none;
+	background-color: rgb(141, 137, 137);
+	border-radius: 1rem;
+}
+
+.head {
+	padding: 40px;
+	background-color: rgb(227, 227, 225);
+}
+.head > h1 {
+	font-size: 50px;
+}
+.head > p {
+	font-size: 20px;
+}
+
+.firstpro {
+	padding-bottom: 100px;
+}
+.firstpro > div {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	width: 100%;
+	padding: 60px;
+}
+.firstpro > div > div {
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: white;
+}
+.firstpro > div > div > img {
+	width: 100%;
+	padding: 12px;
+}
+.firstpro > div > div > button {
+	width: 15%;
+	border: none;
+	background-color: white;
+}
+.firstpro > div > div > button > img {
+	width: 100%;
+}
+.firstpro > button {
+	padding: 10px;
+	width: 200px;
+}
+@media (max-width: 1250px) {
+	.swim > div > h1 {
+		color: rgb(80, 80, 249);
+	}
+	.swim > div > p {
+		font-size: 1rem;
+	}
+}
+@media (max-width: 960px) {
+	.plate {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.plate_img,
+	.card_container {
+		width: 100%;
+	}
+	.card_container > div {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.swim {
+		justify-content: center;
+	}
+	.swim > div {
+		width: 100%;
+	}
+	.swim > div > p {
+		font-size: 1rem;
+	}
+	.swim_btn {
+		padding: 0.5rem 1rem;
+	}
+
+	.scean_text_container p {
+		font-size: 1rem;
+	}
+
+	.firstpro > div {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.firstpro > div > div > img {
+		height: auto;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.firstpro .product-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.firstpro > button {
+		width: 70vw;
+		font-size: 1em;
+		text-align: center;
+	}
+}

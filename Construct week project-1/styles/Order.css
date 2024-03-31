@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+#mid_Section > :nth-child(1) {
+	padding: 10px;
+	border-bottom: 2px solid rgb(1, 129, 248);
+	background-color: rgb(248, 241, 241);
+	text-align: center;
+}
+#mid_Section > :nth-child(1) > a {
+	text-decoration: none;
+	color: rgb(2, 151, 249);
+}
+#mid_Section > :nth-child(1) > a :hover {
+	text-decoration: underline;
+	color: rgb(2, 151, 249);
+}
+
+#mid_Section > :nth-child(2) {
+	padding: 12px;
+	background-color: rgb(242, 165, 178);
+	color: white;
+	text-align: center;
+}
+
+.page {
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.page > a {
+	color: black;
+	margin-left: 12px;
+	font-size: 12px;
+}
+.page > p {
+	color: black;
+	margin-left: 12px;
+	font-size: 12px;
+}
+.title {
+	display: flex;
+	margin-left: 12px;
+	align-items: center;
+}
+.title > h2 {
+	margin-right: 12px;
+	color: rgb(75, 71, 71);
+}
+.desc {
+	margin-left: 12px;
+	font-size: 12px;
+}
+#displayData {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	border-top: 1px solid;
+	padding: 12px;
+	height: 80vh;
+	overflow-y: auto;
+}
+#displayData > div {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	padding: 12px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	background-color: rgb(240, 233, 224);
+}
+.image-container {
+	display: flex;
+	justify-content: center;
+}
+.image-container img {
+	width: 70%;
+	border-bottom: 1px solid;
+}
+.detail-info {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+}
+.detail-info h3 {
+	color: rgb(72, 189, 80);
+	margin: 0;
+}
+.detail-info p {
+	color: rgb(157, 155, 155);
+	margin: 0;
+}
+.detail-info button {
+	background-color: rgb(255, 179, 0);
+	padding: 0.5rem 2rem;
+	border-radius: 0.3rem;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-weight: 900;
+	align-items: center;
+}
+
+@media (max-width: 1024px) {
+	#displayData {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#displayData > div {
+		flex-direction: column;
+	}
+	.image-container img {
+		width: 50%;
+	}
+	.detail-info h1 {
+		font-size: 1.6rem;
+	}
+}
+@media (max-width: 660px) {
+	#displayData {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 510px) {
+	.style_container {
+		display: none;
+	}
+	.detail-info h1 {
+		font-size: 1.4rem;
+	}
+}
