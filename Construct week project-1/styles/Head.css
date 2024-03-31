@@ -1,4 +1,7 @@
 /* Navbar */
+#head {
+	/* position: absolute; */
+}
 #navbar {
 	display: flex;
 	justify-content: space-between;
@@ -7,8 +10,8 @@
 	padding: 10px 20px;
 	color: #fff;
 	position: sticky;
-	top: 0%;
-	z-index: 100;
+	top: 0px;
+	z-index: overlay;
 	width: 100%;
 	border-bottom: 1px solid gray;
 }
